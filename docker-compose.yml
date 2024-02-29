@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8002:8000"
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=cryptodb
+      - POSTGRES_USER=akreem
+      - POSTGRES_PASSWORD=korbaca2013
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+  
