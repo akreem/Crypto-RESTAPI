@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cryptodb',
         'USER': 'akreem',
-        'PASSWORD': 'korbaca2013',
+        'PASSWORD': 'password',
         'HOST': 'db',
         'PORT': '5432',
     }
